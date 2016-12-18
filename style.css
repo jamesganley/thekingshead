@@ -1,0 +1,72 @@
+.jumbotronindex{
+	background-image: url('wkeg.jpg');
+	background-attachment:fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	max-height: 400px;
+	margin-bottom: 0px;
+	text-align: center;
+	opacity: 0.9;
+	
+}
+.navbar-static-top{
+	color: blue;
+	border: white;
+		opacity: 0.9;
+}
+
+.contaier{
+	opacity: 1;
+}
+	
+
+#head{
+	font-family:Great Vibes;
+	color: white;
+	opacity: 1;
+	text-shadow: 2px 2px blue;
+	color: white;
+}
+
+.jumbotronbeer{
+	background-image: url('taps2.0.jpg');
+	background-attachment:fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	max-height: 400px;
+	margin-bottom: 0px;
+	text-align: center;
+	opacity: 0.9;
+}
+
+.alt1{
+	background: white;
+	min-height: 400px;
+	color: grey;
+}
+
+.padding{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.alt2{
+	padding-top: 10px;
+	background: black;
+	min-height: 55px;
+	color: white;
+	text-align: center;
+	
+}
+
+.holder1{
+	border-radius: 10px;
+    background: white;
+    padding: 5px;
+	box-shadow: 5px 5px 5px #516081;
+	color: grey;
+	border-style: outset;
+
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>
+			The Kings Head
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<body>
+		<div class="jumbotron jumbotronindex">
+			<div class="container">
+				<div id="head">
+					<h1>The Kings Head</h1>
+				</div>
+			</div>
+
+		</div>
+			<div class="navbar-static-top">
+				<div class="container">
+					<div class="navbar-brand">
+						40 High St, Billingshurst, RH14 9NY
+					</div>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						MENU
+					</button>
+					<div class="collapse navbar-collapse navHeaderCollapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#about">About Us</a></li>
+							<li><a href="beerlist.html">Beer List</a></li>
+							<li><a href="menu.html">Menu</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+	
+		<div class="alt1" id="about">
+			<br></br>
+			<div class="container">
+				<div class="row1">
+					<div class="col-md-3">
+						<div class="holder1">
+							<h3 class="text-center"><u>Beer List</u></h3>
+							<img src="taps3.0.jpg" class="img-rounded" alt="Cinque Terre" width="100%" height="200px">
+							
+						</div>						
+					</div>
+					<div class="col-md-3">
+						<div class="holder1">
+							<h3 class="text-center"><u>Menu</u></h3>
+							<img src="parma.jpg" class="img-rounded" alt="Cinque Terre" width="100%" height="200px">
+							
+						</div>						
+					</div>
+					<div class="col-md-3">
+						<div class="holder1">
+							<h3 class="text-center"><u>Events</u></h3>
+							<img src="knight.jpg" class="img-rounded" alt="Cinque Terre" width="100%" height="200px">
+							
+						</div>						
+					</div>
+					<div class="col-md-3">
+						<div class="holder1">
+							<h3 class="text-center"><u>Blog</u></h3>
+							<img src="icon.jpg" class="img-rounded" alt="Cinque Terre" width="100%" height="200px">
+							
+						</div>						
+					</div>
+				</div>
+				<div class="row2">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="text-center">About Us</h2>
+						<div class="op">
+							<p class="text-justify">
+								The Kings Head is located at 40 High St Billingshurst in West Sussex. It is a 17th century coaching inn. After a recent refurbishment it now has an enticing array of 8 hand pumps, with a selection of local ales from breweries in West Sussex, and 10 draft beers. There is live music every weekend. It is currently undergoing a building extension which will include a restaurant, function room and 16 en suite bedrooms.
+							</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="alt2">
+			<footer>&copy; James Ganley<br /><a href="#">Back to top</a></footer>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+		$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+	</body>
+</html>
