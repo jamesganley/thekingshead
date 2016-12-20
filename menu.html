@@ -10,10 +10,20 @@
 	</head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<body>
+		<div class="jumbotron jumbotronmenu">
+			<div class="container">
+				<div id="head">
+					<h1>Menu</h1>
+				</div>
+			</div>
+		</div>
+		<div>
+			<span class="sexy_line"></span>
+		</div>
 		<div class="navbar-static-top">
 			<div class="container">
 				<div class="navbar-brand">
-					The Kings Head
+					Now serving food!
 				</div>
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					MENU
@@ -24,17 +34,70 @@
 						<li><a href="#about">About Us</a></li>
 						<li><a href="beerlist.html">Beer List</a></li>
 						<li><a href="menu.html">Menu</a></li>
-						<li><a href="events.html">Events</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>		
-		
-		<div class="jumbotron jumbotronmenu">
-			<div class="container">
-				<h1>The Kings Head</h1>
-				<p>40 High St, Billingshurst, RH14 9NY</p>
+		</div>
+		<div>
+			<span class="sexy_line"></span>
+		</div>
+		<br></br>
+		<br></br>
+		<div class="alt3" id="menu3">
+			<div class="container3">
+				<div class="row3">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="holder3">					
+							<h2 class="text-center"><u>OUR CHRISTMAS MENU</u></h2>						
+						</div>
+						<br></br>
+						<div class="holder3">					
+							<h3 class="text-center"><u>Starter</u></h3>						
+							<p>.Soup of the day with thick cut bread.</p>
+							<p>.Prawn cocktail with brown bread.</p>
+							<p>.Paté with toast.</p>
+							<p>.Garlic mushroom.</p>
+						</div>
+						<div class="holder3">					
+							<h3 class="text-center"><u>Main Course</u></h3>						
+							<p>.Roast turkey with all the trimmings.</p>
+							<p>.Roast beef & yorkshire pudding.</p>
+							<p>.Cod fillet with prawns & citrus butter on leeks & peas with new potatoes.</p>
+							<p>.Mushroom, brie & redcurrant wellington.</p>
+							
+						</div>	
+						<div class="holder3">					
+							<h3 class="text-center"><u>Dessert</u></h3>						
+							<p>.Christmas pudding with brandy sauce.</p>
+							<p>.Apple pie & fresh cream.</p>
+							<p>.Eton mess.</p>
+							<p>.Cheese & biscuits.</p>
+							<p>.Tea or coffee.</p>
+						</div>						
+					</div>
+					
+				</div>
 			</div>
 		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+				$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			  var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html, body').animate({
+					scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+				}
+			});
+			});
+		</script>
+	</body>
+</html>

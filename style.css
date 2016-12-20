@@ -3,17 +3,15 @@
 	background-attachment:fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 400px;
-	max-height: 400px;
 	margin-bottom: 0px;
 	text-align: center;
 	opacity: 0.9;
 	
 }
 .navbar-static-top{
-	color: blue;
+	color: #3267DD;
 	border: white;
-		opacity: 0.9;
+	opacity: 1;
 }
 
 .contaier{
@@ -22,23 +20,31 @@
 	
 
 #head{
-	font-family:Great Vibes;
+	font-family: Great Vibes;
 	color: white;
 	opacity: 1;
-	text-shadow: 2px 2px blue;
+	text-shadow: 1px  1px 2px blue, 1px -1px 2px blue, -1px  1px 2px blue, -1px -1px 2px blue;
 	color: white;
 }
 
 .jumbotronbeer{
-	background-image: url('taps2.0.jpg');
+	background-image: url('alltaps.jpg');
 	background-attachment:fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 400px;
-	max-height: 400px;
+	margin-bottom: 0px;
+	text-align: center;
+	opacity: 0.8;
+}
+.jumbotronmenu{
+	background-image: url('foodback.jpg');
+	background-attachment:fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin-bottom: 0px;
 	text-align: center;
 	opacity: 0.9;
+	
 }
 
 .alt1{
@@ -58,7 +64,9 @@
 	min-height: 55px;
 	color: white;
 	text-align: center;
-	
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .holder1{
@@ -69,4 +77,96 @@
 	color: grey;
 	border-style: outset;
 
+}
+
+
+.sexy_line{ 
+    display: block;
+    border: none;
+    color: white;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+.pole1{
+	background-color: #3267DD;
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
+.pole2{
+	background-color: white;
+	color: #3267DD;
+	border-radius: 10px;
+	padding: 5px;
+}
+.container3{
+	text-align: center;
+}
+.carousel {
+  max-height: 100%;
+  max-height: 550px;
+  margin-bottom: 60px;
+  height:auto;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  max-height: 100%;
+  max-height: 550px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+ /*  position: absolute;*/
+  top: 0;
+  left: 0;
+  min-width: 40%;
+  max-width: 100%;
+  max-height: 550px;
+  width: auto;
+  margin-right:auto;
+  margin-left:auto;
+  height:auto;
+
+}
+.holder3{
+	border-radius: 10px;
+    background: white;
+    padding: 5px;
+	color: grey;
+	text-align: center;
+}
+.row3{
+	background-image: brickwall.png;
+    background-repeat: repeat-y;
+}
+
+.jumbotroncontact{
+	background-image: url('contactus3.jpg');
+	background-attachment:fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+	text-align: center;
+	opacity: 0.9;
+	
+}
+.jumbotronblog{
+	background-image: url('U2.jpg');
+	background-attachment:fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+	text-align: center;
+	opacity: 0.9;
+	
+}
+#map{
+height: 600px;
+width: 600px;
 }

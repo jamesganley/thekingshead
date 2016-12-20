@@ -10,10 +10,20 @@
 	</head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<body>
+		<div class="jumbotron jumbotroncontact">
+			<div class="container">
+				<div id="head">
+					<h1>Contact Us</h1>
+				</div>
+			</div>
+		</div>
+		<div>
+			<span class="sexy_line"></span>
+		</div>
 		<div class="navbar-static-top">
 			<div class="container">
 				<div class="navbar-brand">
-					The Kings Head
+					40 High St, Billingshurst, RH14 9NY
 				</div>
 				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
 					MENU
@@ -24,17 +34,52 @@
 						<li><a href="#about">About Us</a></li>
 						<li><a href="beerlist.html">Beer List</a></li>
 						<li><a href="menu.html">Menu</a></li>
-						<li><a href="events.html">Events</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>		
-		
-		<div class="jumbotron jumbotroncontact">
-			<div class="container">
-				<h1>The Kings Head</h1>
-				<p>40 High St, Billingshurst, RH14 9NY</p>
+		</div>
+		<div>
+			<span class="sexy_line"></span>
+		</div>
+		<br></br>
+		<br></br>
+		<div class="wrapper6">
+			<div class="col-md-8 col-md-offset-1">
+				<form action="action_page.php">
+					Full Name:<br>
+					<input type="text" name="firstname" value="Name">
+					<br>
+					Message:<br>
+					<input type="text" name="lastname" value="Subject" width="48" height="200">
+					<br><br>
+					<input type="submit" value="Submit">
+				</form> 
+				<br></br>
+				<p>When you're finnished please click the "Submit" button.</p>
 			</div>
 		</div>
+		<div class="col-md-8 col-md-offset-3">
+			<h2><u>Our Location</u>
+			</h2>
+			<div id="map">
+
+			</div>
+		</div>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	function myMap() {
+	var myCenter = new google.maps.LatLng(51.023458, -0.451209);
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {center: myCenter, zoom: 5};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+            }
+	</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</html>
